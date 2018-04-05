@@ -1,0 +1,218 @@
+{
+    "companies": [
+        {
+            "id": 1,
+            "companyName": "Millenium Challenge Corporation",
+            "headquarter": {
+                "address": "1099 14th Street NW, Suite 700",
+                "city": "Washington DC",
+                "postal": 20005,
+                "phone": 2025213600
+            }
+        },
+        {
+            "id": 2,
+            "companyName": "Fraym",
+            "headquarter": {
+                "address": "7900 Westpark Dr, Suite A160",
+                "city": "Mclean, VA",
+                "postal": 22102,
+                "phone": 2028690878
+            }
+        },
+        {
+            "id": 3,
+            "companyName": "US & World News",
+            "headquarter": {
+                "address": "3847 M St NW, Suite 730",
+                "city": "Washington, DC",
+                "postal": 20064,
+                "phone": 2024423432
+            }
+        },
+        {
+            "id": 4,
+            "companyName": "The Nature Conservancy",
+            "headquarter": {
+                "address": "4500 Fairfax Dr",
+                "city": "Arlington, VA",
+                "postal": 22203,
+                "phone": 7036348778
+            }
+        },
+        {
+            "id": 5,
+            "companyName": "The World Bank",
+            "headquarter": {
+                "address": "439 H street NW, Suite 600",
+                "city": "Washington, DC",
+                "postal": 220033,
+                "phone": 2024562354
+            }
+        }
+    ],
+    "positions": [
+        { 
+            "id" : 1, 
+            "companyId": 1, 
+            "position": "Economic Field Researcher",
+            "location": "Washington DC",
+            "applied": true
+        },
+        { 
+            "id" : 2, 
+            "companyId": 3, 
+            "position": "Web Developer",
+            "location": "Washington DC",
+            "applied": false
+        },
+        { 
+            "id" : 3, 
+            "companyId": 4, 
+            "position": "Accountant",
+            "location": "Arlington, VA",
+            "applied": true
+        },
+        { 
+            "id" : 4, 
+            "companyId": 2, 
+            "position": "Business Analyst",
+            "location": "Chicago, Il",
+            "applied": false
+        },
+        { 
+            "id" : 5, 
+            "companyId": 5, 
+            "position": "Project Manager",
+            "location": "South Africa",
+            "applied": true
+        },
+        { 
+            "id" : 6, 
+            "companyId": 2, 
+            "position": "Research Analyst Intern",
+            "location": "Nigeria",
+            "applied": false
+        },
+        { 
+            "id" : 7, 
+            "companyId": 2, 
+            "position": "Economic Field Intern",
+            "location": "Morocco",
+            "applied": false
+        },
+        { 
+            "id" : 8, 
+            "companyId": 1, 
+            "position": "Research Assistant",
+            "location": "Bolivia",
+            "applied": true
+        },
+        { 
+            "id" : 9, 
+            "companyId": 5, 
+            "position": "Data Analyist Intern",
+            "location": "Washington, DC",
+            "applied": false
+        },
+        { 
+            "id" : 10, 
+            "companyId": 4, 
+            "position": "Data Mining Intern",
+            "location": "Arlington, VA",
+            "applied": false
+        }
+    ],
+    "tasks": [
+        {
+            "id" : 1,
+            "taskList": [
+                {
+                    "item": "Send follow up",
+                    "done": false
+                },
+                {
+                    "item": "Find an alumni",
+                    "done": false
+                }
+            ],
+            "positionId": 3
+        },
+        {
+            "id" : 2,
+            "taskList": [
+                {
+                    "item": "Set up phone interview",
+                    "done": true
+                },
+                {
+                    "item": "Push latest project to github",
+                    "done": false
+                },
+                {
+                    "item": "Brush up on Angular 5",
+                    "done": true
+                }
+            ],
+            "positionId": 2
+        },
+        {
+            "id" : 3,
+            "taskList": [
+                {
+                    "item": "Get 2 letters of recommendations",
+                    "done": false
+                },
+                {
+                    "item": "Research CEO",
+                    "done": false
+                },
+                {
+                    "item": "Take assessment",
+                    "done": false
+                }
+            ],
+            "positionId": 5
+        },
+        {
+            "id" : 5,
+            "taskList": [
+                {
+                    "item": "Get references",
+                    "done": true
+                },
+                {
+                    "item": "Research company",
+                    "done": false
+                },
+                {
+                    "item": "Update resume",
+                    "done": true
+                },
+                {
+                    "item": "Set up phone call with alumni",
+                    "done": false
+                }
+            ],
+            "positionId": 4
+        },
+        {
+            "id" : 6,
+            "taskList": [
+                {
+                    "item": "Get references",
+                    "done": true
+                },
+                {
+                    "item": "Update resume",
+                    "done": false
+                },
+                {
+                    "item": "Set up phone call with alumni",
+                    "done": false
+                }
+            ],
+            "positionId": 7
+        }
+    ]
+}

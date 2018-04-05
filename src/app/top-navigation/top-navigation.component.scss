@@ -1,0 +1,32 @@
+.navbar {
+    background-color: steelblue;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 3%;
+    position: absolute;
+    height: 50px;
+    line-height: 35px;
+
+    .navTitle {
+        font-size: 1.2em;
+        font-family: century gothic;
+    }
+
+    ul.navMenu {
+        list-style: none;
+        text-align: right;
+        margin: 0;
+
+        li {
+            display: inline;
+            padding: 0 3%;
+            font-family: century;
+        }
+
+        li:hover {
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
+}

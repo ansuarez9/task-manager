@@ -1,0 +1,13 @@
+ul.positionDetails {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 1px;
+
+    li {
+        font-size: 14px;
+    }
+}
+
+:host /deep/ div.styleCard.ui-card.ui-widget.ui-widget-content.ui-corner-all:hover {
+    background-color: #cfcfd2 !important;
+}

@@ -1,0 +1,13 @@
+ul.companyDetails {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 1px;
+
+    li {
+        font-size: 14px;
+    }
+}
+
+:host /deep/ div.styleCard.ui-card:hover {
+    background-color: #cfcfd2 !important;
+}
