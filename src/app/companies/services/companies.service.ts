@@ -57,7 +57,6 @@ export class CompaniesService {
                     return tasks.filter(task => task.positionId === id);
                 }),
                 map((data:any) => {
-                    console.log(data.taskList);
                     return data.taskList;
                 })
             );

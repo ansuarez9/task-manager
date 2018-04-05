@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router'
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { TasksComponent } from './tasks/tasks.component';
 import { CompaniesService } from './companies/services/companies.service';
 
 import { CardModule } from 'primeng/card';
+import { CheckboxModule } from 'primeng/checkbox';
+
 import { CompaniesListComponent } from './companies/companies-list/companies-list.component';
 import { PositionsListComponent } from './companies/positions-list/positions-list.component';
 import { TaskListComponent } from './companies/task-list/task-list.component';
@@ -43,8 +46,10 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    FormsModule,
     HttpClientModule,
-    CardModule
+    CardModule,
+    CheckboxModule
   ],
   providers: [
     CompaniesService
