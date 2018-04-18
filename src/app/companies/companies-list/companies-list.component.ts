@@ -17,7 +17,7 @@ import { Company } from '../company.model';
   styleUrls: ['./companies-list.component.scss']
 })
 export class CompaniesListComponent implements OnInit {
-  @Input('companies$') companies$: Observable<Company>;
+  @Input('companies$') companies$: Observable<Company[]>;
   @Output() selectedCompany = new EventEmitter();
   activeCompany:Company;
 
@@ -27,7 +27,7 @@ export class CompaniesListComponent implements OnInit {
   }
 
   selectCompany(company){
-    this.activeCompany = company;
+    // this.activeCompany = company;
     this.selectedCompany.emit(company);
   }
 

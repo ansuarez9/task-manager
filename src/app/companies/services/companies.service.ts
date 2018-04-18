@@ -22,11 +22,11 @@ export class CompaniesService {
     }
 
     getCompanies():Observable<Company[]> {
-        return this.$http.get(companiesUrl);
+        return this.$http.get<Company[]>(companiesUrl);
     }
 
     getPositions(id?:number):Observable<Position[]>{
-        return this.$http.get(positionsUrl)
+        return this.$http.get<Position[]>(positionsUrl)
             .pipe(
                 map((data:Position[]) => {
                     if(id){
@@ -41,23 +41,16 @@ export class CompaniesService {
         )
     }
 
-    // getTaskList(id:number):Observable<Task[]>{
-    //     return this.$http.get(tasksUrl)
-    //         .pipe(
-    //             map((tasks:Task[]) => {
-    //                 return tasks.filter(task => task.positionId === id);
-    //             })
-    //         );
-    // }
-
     getTaskList(id:number):Observable<TaskList[]>{
-        return this.$http.get(tasksUrl)
+        return this.$http.get<Task[]>(tasksUrl)
             .pipe(
-                concatMap((tasks:any) => {
-                    return tasks.filter(task => task.positionId === id);
-                }),
-                map((data:any) => {
-                    return data.taskList;
+                map((tasks:Task[]) => {
+                    let filteredArray = tasks.filter(task => task.positionId === id);
+                    if(filteredArray.length > 0){
+                        return filteredArray[0].taskList;
+                    } else {
+                        return null;
+                    }
                 })
             );
     }

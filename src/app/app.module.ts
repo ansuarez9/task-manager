@@ -16,6 +16,8 @@ import { CompaniesService } from './companies/services/companies.service';
 
 import { CardModule } from 'primeng/card';
 import { CheckboxModule } from 'primeng/checkbox';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 import { CompaniesListComponent } from './companies/companies-list/companies-list.component';
 import { PositionsListComponent } from './companies/positions-list/positions-list.component';
@@ -49,7 +51,9 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule,
     CardModule,
-    CheckboxModule
+    CheckboxModule,
+    InputTextModule,
+    ButtonModule
   ],
   providers: [
     CompaniesService

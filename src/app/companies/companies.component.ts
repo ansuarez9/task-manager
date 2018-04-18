@@ -34,7 +34,6 @@ export class CompaniesComponent implements OnInit {
 
   ngOnInit() {
     this.companies$ = this.companyService.getCompanies();
-
     this.positionsList$ = this.companyService.getPositions();
     
   }
