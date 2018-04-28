@@ -23,9 +23,9 @@ import { Position } from './position.model';
     </div>
   </div>
   `,
-  styleUrls: ['./companies.component.scss']
+  styleUrls: ['./dashboard.component.scss']
 })
-export class CompaniesComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   companies$: Observable<Company[]>;
   positionsList$: Observable<Position[]>;
   companyId: number;

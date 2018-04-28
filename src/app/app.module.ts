@@ -8,27 +8,29 @@ import { AppComponent } from './app.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CompaniesComponent } from './companies/companies.component';
-import { PositionsComponent } from './positions/positions.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { PositionFormComponent } from './position/position-form.component';
+import { CompanyFormComponent } from './company/company-form.component';
 
-import { CompaniesService } from './companies/services/companies.service';
+import { CompaniesService } from './dashboard/services/companies.service';
 
 import { CardModule } from 'primeng/card';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 
-import { CompaniesListComponent } from './companies/companies-list/companies-list.component';
-import { PositionsListComponent } from './companies/positions-list/positions-list.component';
-import { TaskListComponent } from './companies/task-list/task-list.component';
+import { CompaniesListComponent } from './dashboard/companies-list/companies-list.component';
+import { PositionsListComponent } from './dashboard/positions-list/positions-list.component';
+import { TaskListComponent } from './dashboard/task-list/task-list.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'companies', component: CompaniesComponent },
-  { path: 'positions', component: PositionsComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'positions', component: PositionFormComponent },
   { path: 'tasks', component: TasksComponent },
-  { path: '', redirectTo: '/companies', pathMatch: 'full' },
+  { path: 'company', component: CompanyFormComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ]
 
@@ -38,12 +40,13 @@ const appRoutes: Routes = [
     TopNavigationComponent,
     HomeComponent,
     PageNotFoundComponent,
-    CompaniesComponent,
-    PositionsComponent,
+    DashboardComponent,
+    PositionFormComponent,
     TasksComponent,
     CompaniesListComponent,
     PositionsListComponent,
-    TaskListComponent
+    TaskListComponent,
+    CompanyFormComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

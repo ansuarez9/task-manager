@@ -1,0 +1,42 @@
+<div class="companyFormContainer">
+  <h1>New Company</h1>
+  <form #newCompany="ngForm">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <label for="name">Company Name</label><br/>
+        <input type="text" pInputText name="name" [(ngModel)]="name"/>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <label for="address">Address</label><br/>
+        <input type="text" pInputText name="address" [(ngModel)]="address"/>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-6">
+        <label for="city">City</label><br/>
+        <input type="text" pInputText name="city" [(ngModel)]="city"/>
+      </div>
+      <div class="ui-g-12 ui-md-3">
+        <label for="state">State</label><br/>
+        <input type="text" pInputText name="state" [(ngModel)]="state"/>
+      </div>
+      <div class="ui-g-12 ui-md-3">
+        <label for="postalCode">Postal Code</label><br/>
+        <input type="text" pInputText name="postalCode" [(ngModel)]="postalCode"/>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <label for="phone">Phone</label><br/>
+        <input type="text" pInputText name="phone" [(ngModel)]="phone"/>
+      </div>
+    </div>
+    <div class="ui-g buttonGroup">
+      <button pButton label="Save" class="ui-button-success" (click)="save(newCompany)"></button>
+      <button pButton label="Reset" class="ui-button-danger" (click)="reset()"></button>
+      <button pButton label="Delete" class="ui-button-danger" (click)="delete()"></button>
+    </div>
+  </form>
+</div>
